@@ -16,9 +16,6 @@ const LeftArrow = () => {
         cursor='pointer'
         d={['none','none','none','block']}
       />
-      <Col key={person.id} sm="4">
-        <PeopleCard person={person} />
-      </Col>
     </Flex>
   );
 }
@@ -43,7 +40,7 @@ export default function ImageSrollbar({ data }) {
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow} style={{ overflow: 'hidden' }} >
       {data.map((item) => (
         <Box width='910px' itemId={item.id} overflow='hidden' p='1'>
-          <Image placeholder="blur" blurDataURL={item.url} src={item.url} width={1000} height={500}  sizes="(max-width: 500px) 100px, (max-width: 1023px) 400px, 1000px" alt={image1} />
+          <Image placeholder="blur" blurDataURL={item.url} src={item.url} width={1000} height={500}  sizes="(max-width: 500px) 100px, (max-width: 1023px) 400px, 1000px" alt={123} />
         </Box>
       ))}
     </ScrollMenu>
