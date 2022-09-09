@@ -16,6 +16,9 @@ const LeftArrow = () => {
         cursor='pointer'
         d={['none','none','none','block']}
       />
+      <Col key={person.id} sm="4">
+        <PeopleCard person={person} />
+      </Col>
     </Flex>
   );
 }
