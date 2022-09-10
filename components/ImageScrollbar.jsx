@@ -6,7 +6,6 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
-  key={null};
 
   return (
     <Flex justifyContent='center' alignItems='center' marginRight='1'>
